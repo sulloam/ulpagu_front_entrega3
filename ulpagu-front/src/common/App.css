@@ -1,0 +1,109 @@
+.app-container {
+  background-image: url('/fondoapp.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.profile-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.profile-button button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.profile-button button:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "jugar . amigo"
+    ". historial ."
+    "reglas . nosotros";
+  gap: 20px;
+  width: 90%;
+  max-width: 800px;
+  padding: 20px;
+  box-sizing: border-box;
+  justify-items: center;
+  align-items: center;
+}
+
+
+.button-grid button {
+  font-size: 1.3rem;               
+  font-weight: bold;
+  border: none;
+  border-radius: 16px;
+  background-color: #FFD700;
+  padding: 24px 40px;              
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  width: 100%;
+  max-width: 260px;              
+}
+
+.button-grid button:hover {
+  transform: scale(1.05);
+  background-color: #ffc800;
+}
+
+
+.button-grid button:nth-child(1) {
+  grid-area: jugar;
+}
+
+.button-grid button:nth-child(2) {
+  grid-area: amigo;
+}
+
+.button-grid button:nth-child(3) {
+  grid-area: historial;
+}
+
+.button-grid button:nth-child(4) {
+  grid-area: reglas;
+}
+
+.button-grid button:nth-child(5) {
+  grid-area: nosotros;
+}
+
+@media (max-width: 768px) {
+  .button-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "jugar"
+      "amigo"
+      "historial"
+      "reglas"
+      "nosotros";
+  }
+
+  .button-grid button {
+    max-width: 100%;
+  }
+}
+
+
