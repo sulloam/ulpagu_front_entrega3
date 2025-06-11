@@ -4,7 +4,7 @@ function Nosotros() {
   const creadores = [
     {
       nombre: 'Pedro Gutiérrez',
-      descripcion: 'Estudiante de Ingeniería Civil UC. Mayor TI y Minor industrial',
+      descripcion: 'Estudiante de Ingeniería Civil UC. Mayor TI y Minor industrial. Entre mis intereses destacan el deporte, juego fútbol, escalo, juego pádel y tenis y subo harto cerros. Me gusta mucho la música también, razón por la que aprendí a mezclar (House).',
       imagen: '/pedro.jpeg'
     },
     {
