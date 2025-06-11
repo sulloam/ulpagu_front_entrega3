@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -9,21 +10,20 @@ html, body {
 .truco-page {
   min-height: 100vh;
   width: 100vw;
-  background-color: #f5f5dc; 
+  background-color: #f5f5dc;
   color: #333;
-  font-family: 'Segoe UI', sans-serif;
-  padding: 40px 5%;
+  font-family: "Segoe UI", sans-serif;
+  padding: 120px 5% 40px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 120px;
 }
-
 
 .truco-page h1 {
   font-size: 2.5rem;
   color: #204d2a;
+  margin-top: 3100px;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -58,6 +58,33 @@ html, body {
   font-size: 0.9rem;
 }
 
+.truco-page table {
+  width: 100%;
+  max-width: 700px;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.truco-page th,
+.truco-page td {
+  border: 1px solid #ccc;
+  padding: 10px 14px;
+  text-align: left;
+}
+
+.truco-page th {
+  background-color: #e7f0e7;
+  color: #204d2a;
+  font-weight: bold;
+}
+
+.truco-page tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
 @media (max-width: 768px) {
   .truco-page {
     padding: 30px 20px;
@@ -76,4 +103,3 @@ html, body {
     font-size: 1rem;
   }
 }
-
