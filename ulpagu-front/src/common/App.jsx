@@ -8,13 +8,13 @@ function App() {
   return (
     <div className="app-container">
       <div className="profile-button">
-        <button onClick={() => navigate('/welcome')}>👤</button>
+        <button onClick={() => navigate('/perfil')}>👤</button>
       </div>
 
       <div className="button-grid">
-        <button onClick={() => navigate('/board')}>Jugar Partida</button>
-        <button onClick={() => navigate('/friends')}>Añadir Amigo</button>
-        <button onClick={() => navigate('/history')}>Ver Historial</button>
+        <button onClick={() => navigate('/jugar')}>Jugar Partida</button>
+        <button onClick={() => navigate('/amigos')}>Añadir Amigo</button>
+        <button onClick={() => navigate('/historial')}>Ver Historial</button>
         <button onClick={() => navigate('/instructions')}>Reglas del Juego</button>
         <button onClick={() => navigate('/nosotros')}>Sobre Nosotros</button>
       </div>
