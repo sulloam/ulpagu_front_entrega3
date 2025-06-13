@@ -1,0 +1,123 @@
+.amigos-container {
+  background-color: #f5f5dc;
+  color: #333;
+  font-family: "Segoe UI", sans-serif;
+  padding: 40px;
+  box-sizing: border-box;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.amigos-inner {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.amigos-container h1 {
+  color: #204d2a;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.amigos-container h2 {
+  color: #2f5e38;
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.formulario-amigos {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.formulario-amigos input {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.formulario-amigos button {
+  background-color: #204d2a;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.formulario-amigos button:hover {
+  background-color: #2f5e38;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  max-width: 500px;
+}
+
+li {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+li button:first-of-type {
+  background-color: #2f5e38;
+  color: white;
+}
+
+li button:last-of-type {
+  background-color: #b83a3a;
+  color: white;
+}
+
+.mensaje {
+  text-align: center;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+button[onClick] {
+  margin-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #204d2a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button[onClick]:hover {
+  background-color: #2f5e38;
+}
