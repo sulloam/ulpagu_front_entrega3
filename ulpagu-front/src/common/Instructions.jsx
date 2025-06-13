@@ -8,9 +8,9 @@ function Instructions() {
       <section>
         <h2>1. Objetivo del juego</h2>
         <p>
-          El servidor dará por terminada una partida cuando un jugador alcance
-          el puntaje objetivo (30 o 45 puntos), según la configuración inicial
-          de la partida.
+          Se dará por terminada una partida cuando un jugador alcance el puntaje
+          objetivo (30 o 45 puntos), según la configuración inicial de la
+          partida.
         </p>
       </section>
 
@@ -18,9 +18,9 @@ function Instructions() {
         <h2>2. Reparto de cartas</h2>
         <p>
           El servidor repartirá 3 cartas únicas a cada jugador al inicio de cada
-          mano. No debe haber cartas repetidas entre jugadores ni en la mano de
-          un mismo jugador. Se usará una baraja española de 40 cartas: del 1 al
-          7, y del 10 al 12 (Se excluyen 8 y 9 de la baraja).
+          mano. No habrán cartas repetidas entre jugadores ni en la mano de un
+          mismo jugador. Se usará una baraja española de 40 cartas: del 1 al 7,
+          y del 10 al 12 (Se excluyen 8 y 9 de la baraja).
         </p>
       </section>
 
@@ -144,15 +144,7 @@ function Instructions() {
       </section>
 
       <section>
-        <h2>7. Flor</h2>
-        <p>
-          Tres cartas del mismo palo. Suma sus valores + 20. Anula el envido.
-          Puede contrarrestarse con "Contra flor".
-        </p>
-      </section>
-
-      <section>
-        <h2>8. El Mazo</h2>
+        <h2>7. El Mazo</h2>
         <p>
           Un jugador puede rendirse diciendo "me voy al mazo". El rival suma los
           puntos correspondientes.
@@ -160,7 +152,7 @@ function Instructions() {
       </section>
 
       <section>
-        <h2>9. Cantar y responder</h2>
+        <h2>8. Cantar y responder</h2>
         <p>
           Solo puede haber una apuesta activa a la vez. El servidor debe
           bloquear nuevas acciones hasta que la actual se resuelva.
@@ -168,7 +160,7 @@ function Instructions() {
       </section>
 
       <section>
-        <h2>10. Mentir está permitido</h2>
+        <h2>9. Mentir está permitido</h2>
         <p>
           El engaño verbal está permitido. Pero el servidor evalúa las cartas
           reales al resolver.
@@ -176,7 +168,7 @@ function Instructions() {
       </section>
 
       <section>
-        <h2>11. Reglas Nuevas - Propias</h2>
+        <h2>10. Reglas Nuevas - Propias</h2>
 
         <h3>1. Ruleta Mágica</h3>
         <p>
