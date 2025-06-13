@@ -17,7 +17,7 @@ function Register() {
       const res = await axios.post('/usuarios', {
         nombre_usuario: nombreUsuario,
         correo: correo,
-        contraseña_hash: contraseña,
+        contraseña: contraseña,
         carta_favorita: cartaFavorita
       });
 
