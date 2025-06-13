@@ -1,0 +1,132 @@
+/* Login.css */
+
+/* 🔒 Asegura que no haya scroll en ninguna dirección */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: "Avenir", sans-serif;
+}
+
+/* 🎯 Contenedor centrado y con fondo verde oscuro */
+.login-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #114b28;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 🃏 Título principal del juego */
+.titulo-juego {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* 📦 Caja del formulario de login */
+.login-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 350px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+/* 📝 Subtítulo */
+.login-titulo {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+/* 📩 Formulario alineado verticalmente */
+.login-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* ✏️ Inputs */
+.login-formulario input {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+/* 🔘 Botón de ingreso */
+.login-formulario button {
+  background-color: #ffd700;
+  color: black;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-formulario button:hover {
+  background-color: #ffc800;
+}
+
+/* ⚠️ Mensaje de error o éxito */
+.login-mensaje {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* 🧭 Enlace a registro */
+.login-registro {
+  margin-top: 1.2rem;
+  font-size: 0.95rem;
+}
+
+.login-link {
+  color: #ffd700;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/* 👁️ Campo con botón del ojo */
+.input-password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-password-wrapper input {
+  width: 100%;
+  padding-right: 40px; /* Espacio para el ícono */
+}
+
+.ojo-toggle {
+  position: absolute;
+  right: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.ojo-toggle:hover {
+  color: #000;
+}

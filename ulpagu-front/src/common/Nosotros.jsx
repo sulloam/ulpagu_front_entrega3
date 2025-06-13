@@ -11,13 +11,14 @@ function Nosotros() {
     {
       nombre: "Lucas Palacios",
       descripcion:
-        "Estudiante de Ingeniería Civil UC. Mayor TI y Minor industrial. Me gusta mucho el deporte y la música. Soy hincha de Colo Colo, en mi tiempo libre juego fútbol, tenis y toco guitarra. Además, soy scout hace 12 años (Jefe hace 5) del grupo de mi colegio.",
+        "Estudiante de Ingeniería Civil UC. Mayor industrial y Minor TI. Me gusta mucho el deporte y la música. Soy hincha de Colo Colo, en mi tiempo libre juego fútbol, tenis y toco guitarra. Además, soy scout hace 12 años (Jefe hace 5) del grupo de mi colegio.",
       imagen: "/lucas.JPG",
     },
     {
       nombre: "Sebastián Ulloa",
-      descripcion: "Encargado del backend y la lógica del juego.",
-      imagen: "/pedro.jpeg",
+      descripcion:
+        "Estudiante de Ingeniería Civil UC. Major Industrial y Minor TI. Me gustan los deportes como jugar fútbol, tenis y essquiar. También disfruto estar con mis amigos y viajar.",
+      imagen: "/seba.jpeg",
     },
   ];
 
