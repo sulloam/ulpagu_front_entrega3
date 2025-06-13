@@ -60,6 +60,9 @@ function Perfil() {
         <p className="perfil-info">
           <strong>Carta favorita:</strong> {usuario.carta_favorita}
         </p>
+        <p className="perfil-info">
+          <strong>ID de usuario:</strong> {usuario.id}
+        </p>
 
         <div className="perfil-subida">
           <input
