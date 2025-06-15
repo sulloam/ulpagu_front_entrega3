@@ -1,1 +1,0 @@
-# Ulpagu_front_s2
