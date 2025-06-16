@@ -1,3 +1,4 @@
+// src/common/App.jsx
 import "./App.css";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -41,6 +42,8 @@ function App() {
           Reglas del Juego
         </button>
         <button onClick={() => navigate("/nosotros")}>Sobre Nosotros</button>
+        <button onClick={() => navigate("/usuarios")}>Usuarios</button>{" "}
+        {/* ✅ NUEVO */}
       </div>
     </div>
   );

@@ -1,3 +1,4 @@
+/* src/pages/Instructions.css */
 html,
 body {
   margin: 0;
@@ -23,7 +24,6 @@ body {
 .truco-page h1 {
   font-size: 2.5rem;
   color: #204d2a;
-  margin-top: 3100px;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -40,6 +40,12 @@ body {
   margin-bottom: 10px;
 }
 
+.truco-page h3 {
+  font-size: 1.2rem;
+  color: #1c4128;
+  margin-top: 16px;
+}
+
 .truco-page p,
 .truco-page li {
   font-size: 1.05rem;
@@ -48,6 +54,16 @@ body {
 
 .truco-page ul {
   padding-left: 20px;
+}
+
+.truco-page ol {
+  padding-left: 25px;
+  list-style-position: inside;
+}
+
+.truco-page li::marker {
+  font-weight: bold;
+  color: #204d2a;
 }
 
 .truco-page footer {
@@ -102,4 +118,23 @@ body {
   .truco-page li {
     font-size: 1rem;
   }
+}
+
+.truco-list {
+  padding-left: 25px;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  list-style-position: inside;
+}
+
+.truco-list li::marker {
+  color: #204d2a;
+  font-weight: bold;
+}
+
+.truco-page h4 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 12px 0 4px;
+  color: #1d3b26;
 }
