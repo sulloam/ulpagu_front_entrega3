@@ -58,9 +58,13 @@ Este sistema permite una escalabilidad futura del juego, habilitando acciones ex
 
 ## 💡 Supuestos, restricciones y decisiones de diseño
 
-- La imagen de fondo solo se carga en la **landing page**, no en otras vistas.
 - Los IDs de usuario se muestran como forma de identificación cruzada para poder enviar solicitudes de amistad.
-- Las fotos de perfil se almacenan localmente por usuario (en localStorage), lo cual puede causar que no se compartan entre sesiones o dispositivos.
+- Las fotos de perfil se almacenan localmente por usuario (en localStorage), lo cual causa que se mantenga la misma entre usuarios. Será arreglado en la próxima entrega.
+- Todos los usuarios registrados a través de la interfaz web son considerados **jugadores normales** (rol: `"jugador"`). No se permite seleccionar el rol durante el registro, ya que se asume que los administradores son designados manualmente por los desarrolladores o mantenedores del sistema.
+- El rol de **administrador** (`"admin"`) debe ser asignado explícitamente mediante herramientas externas como **Postman** o directamente en la base de datos. Esta decisión se tomó por razones de seguridad y coherencia del sistema, evitando que cualquier usuario pueda autoproclamarse administrador desde la interfaz.
+- Para facilitar la corrección del proyecto, se incluyeron las siguientes **credenciales de administrador de prueba**:
+  correo: admin2@admin.com
+  contraseña: Admin$123
 
 ---
 
