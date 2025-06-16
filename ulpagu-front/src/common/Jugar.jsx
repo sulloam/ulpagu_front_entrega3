@@ -77,14 +77,7 @@ function Jugar() {
       );
       setNombreUsuarios(nuevosNombres);
     } catch (e) {
-      if (e.response?.data?.errors) {
-        console.error("❌ Error al crear partida:", e.response.data.errors);
-        e.response.data.errors.forEach((err) => {
-          console.error(`→ ${err.message}`);
-        });
-      } else {
-        console.error("❌ Error desconocido:", e.response?.data || e.message);
-      }
+      console.error("Error al cargar partidas:", e);
     }
   };
 
@@ -121,14 +114,15 @@ function Jugar() {
 
   const aceptarPartida = async (id) => {
     try {
-      await axios.post(`/partidas/${id}/iniciar`, null, { headers });
+      await axios.post(`/partidas/${id}/iniciar`, {}, { headers });
       setMensaje("✅ Partida iniciada");
-      cargarPartidas();
+      cargarPartidas(); // refresca la lista
     } catch (e) {
       console.error("Error al iniciar partida:", e.response?.data || e.message);
       setMensaje("❌ No se pudo iniciar la partida");
     }
   };
+
 
   const rechazarPartida = async (id) => {
     try {
@@ -155,8 +149,8 @@ function Jugar() {
         value={puntajeObjetivo}
         onChange={(e) => setPuntajeObjetivo(parseInt(e.target.value))}
       >
+        <option value={6}>6 puntos</option>
         <option value={30}>30 puntos</option>
-        <option value={45}>45 puntos</option>
       </select>
 
       <h2>Tus amigos</h2>
