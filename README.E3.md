@@ -40,10 +40,27 @@ En esta entrega, se incorporaron importantes mejoras visuales y funcionales resp
 
 ---
 
+## 👮‍♂️ Gestión de roles: Administrador vs Usuario normal
+
+Se incorporó un sistema de **distinción entre usuarios normales y administradores**, tanto a nivel visual como funcional:
+
+- 🔐 **Protección desde el backend**:
+  - Las rutas sensibles (como `/usuarios`) están protegidas con middleware que verifica si el usuario autenticado tiene rol `admin`.
+- 📋 **Vista exclusiva para administradores**:
+  - En la landing page se implementó el botón Usuarios. Para administradores, muestra una tabla completa con todos los usuarios del sistema, incluyendo ID, nombre, correo, rol y carta favorita.
+  - Si un usuario no administrador intenta acceder, se muestra un mensaje de error y un botón para volver a la landing page.
+- ✅ **Estilo visual consistente y scroll automático**:
+  - Se encapsularon los estilos para evitar que los cambios en `Usuarios.css` afecten otras vistas como `Instructions`.
+
+Este sistema permite una escalabilidad futura del juego, habilitando acciones exclusivas para administradores como moderación, edición o análisis de usuarios.
+
+---
+
 ## 💡 Supuestos, restricciones y decisiones de diseño
 
 - La imagen de fondo solo se carga en la **landing page**, no en otras vistas.
 - Los IDs de usuario se muestran como forma de identificación cruzada para poder enviar solicitudes de amistad.
+- Las fotos de perfil se almacenan localmente por usuario (en localStorage), lo cual puede causar que no se compartan entre sesiones o dispositivos.
 
 ---
 
@@ -59,17 +76,23 @@ En esta entrega, se incorporaron importantes mejoras visuales y funcionales resp
 
 ## 📂 Estructura relevante del proyecto
 
+```
 ulpagu-front/
 └── src/
-└── common/
-├── App.jsx / App.css → Landing page con navegación principal
-├── Amigos.jsx → Página de gestión de solicitudes de amistad por ID
-├── Historial.jsx → Historial de partidas (por implementar)
-├── Instructions.jsx / .css → Página de reglas del juego
-├── Jugar.jsx → Página para iniciar partidas
-├── Login.jsx / .css → Login de usuarios (estilizado, con toggle de contraseña)
-├── Register.jsx / .css → Registro de usuarios
-├── Perfil.jsx / .css → Perfil de usuario con foto, datos y cierre de sesión
-├── Nosotros.jsx / .css → Página de créditos con los creadores del proyecto
-├── Routing.jsx → Sistema de rutas de React
-└── main.jsx → Punto de entrada de React
+    ├── App.jsx / App.css         → Landing page con navegación principal
+    ├── Amigos.jsx                → Página de gestión de solicitudes de amistad por ID
+    ├── Historial.jsx             → Historial de partidas (por implementar)
+    ├── Instructions.jsx / .css   → Página de reglas del juego
+    ├── Jugar.jsx                 → Página para iniciar partidas
+    ├── Login.jsx / .css          → Login de usuarios (estilizado, con toggle de contraseña)
+    ├── Register.jsx / .css       → Registro de usuarios
+    ├── Perfil.jsx / .css         → Perfil de usuario con foto, datos y cierre de sesión
+    ├── Nosotros.jsx / .css       → Página de créditos con los creadores del proyecto
+    ├── Usuarios.jsx / .css       → Vista exclusiva para administradores (ver todos los usuarios)
+    ├── AdminRoute.jsx            → Ruta protegida para vistas exclusivas de administradores
+    ├── PrivateRoute.jsx          → Ruta protegida para usuarios autenticados
+    ├── Routing.jsx               → Sistema de rutas de React
+    └── main.jsx                  → Punto de entrada de React
+```
+
+---

@@ -1,0 +1,87 @@
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: auto;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f5f5dc;
+}
+
+.usuarios-page {
+  min-height: 100vh;
+  width: 100vw;
+  padding: 120px 5% 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f5dc;
+  overflow-y: auto;
+}
+
+.usuarios-page h2 {
+  font-size: 2.5rem;
+  color: #204d2a;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.usuarios-page table {
+  width: 100%;
+  max-width: 900px;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.usuarios-page th,
+.usuarios-page td {
+  border: 1px solid #ccc;
+  padding: 10px 14px;
+  text-align: left;
+}
+
+.usuarios-page th {
+  background-color: #e7f0e7;
+  color: #204d2a;
+  font-weight: bold;
+}
+
+.usuarios-page tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.usuarios-page button {
+  margin-top: 30px;
+  padding: 10px 16px;
+  background-color: #204d2a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.usuarios-page button:hover {
+  background-color: #2f5e38;
+}
+
+.usuarios-page .error {
+  color: red;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .usuarios-page {
+    padding: 30px 20px;
+  }
+
+  .usuarios-page h2 {
+    font-size: 2rem;
+  }
+}
